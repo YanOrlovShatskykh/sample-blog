@@ -1,8 +1,45 @@
-// @media(max-width: 1200px)
-  
+@media(max-width: 1200px)
+  .main-menu
+    &__logo
+      padding-bottom: 11px
+    &__list-item
+      margin-bottom: 10px
+      &_active
+        &::after
+          content: ""
+          position: absolute
+          left: -13px
+          bottom: -5px
+          width: 80px
+          height: 4px
+          background-color: #ff4081
+    &__navigation
+      flex-basis: 55%
+
 // @media(max-width: 992px)
 
-// @media(max-width: 768px)
+@media(max-width: 768px)
+  .main-menu
+    &__button-action:not(:last-child)
+      display: none
+    &__button-action
+      &::after
+        top: -13px
+        left: 20px
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        background-color: #ff4081
+      &::before
+        content: "7"
+        position: absolute
+        top: -11px
+        right: -10px
+        color: #ffffff
+        font-family: 'Montserrat', sans-serif
+        z-index: 10
+        font-size: 14px
+        
 
 @media(max-width: 576px)
   .main-header
@@ -22,4 +59,22 @@
       padding-left: 0
       &::before
         display: none
+    &__main-menu
+      background-image: none
+      background-color: #3f51b5
+      &::after
+        display: none
+  .main-menu
+    &__burger
+      display: block
+    &__navigation
+      display: none
+    &__logo
+      padding: 0
+      padding-left: 15px
+    &__actions
+      padding-right: 7px
+    &__button-action
+      margin: 0
+  
         

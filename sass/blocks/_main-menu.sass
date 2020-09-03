@@ -1,0 +1,117 @@
+.main-header
+  &__main-menu
+    position: relative
+    z-index: 1
+    padding-top: 15px
+    padding-bottom: 18px
+    background-image: url("../img/main-header/main-bg.jpg")
+    background-color: #212121
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: cover
+    &::after
+      content: ""
+      position: absolute
+      z-index: -1
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(33, 33, 33, 0.87)
+    &-box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+.main-menu
+  &__burger
+    display: none
+    margin-left: -5px
+    color: #ffffff
+  &__logo
+  &__logo-text
+    font-family: 'Montserrat', sans-serif
+    font-weight: 600
+    font-size: 24px
+    line-height: 36px
+    letter-spacing: 2px
+    color: #ffffff
+    text-transform: uppercase
+  &__navigation
+    margin-left: auto
+    margin-right: 29px
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+  &__list-item
+    position: relative
+    margin: 0;
+    padding: 0;
+    padding-right: 23px
+    &:last-child
+      padding-right: 0
+    &_active
+      &::after
+        content: ""
+        position: absolute
+        left: -13px
+        bottom: -26px
+        width: 80px
+        height: 4px
+        background-color: #ff4081
+  &__button
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer
+  &__button-text
+    padding-right: 6px
+    font-family: 'Montserrat', sans-serif
+    font-weight: 600
+    font-size: 14px
+    line-height: 18px
+    color: #ffffff
+    text-transform: uppercase
+  &__button-arrow
+    margin: 0
+    padding: 0
+    font-size: 20px
+    color: #ffffff
+
+  &__actions
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-right: 13px
+  &__button-action
+    position: relative
+    border: none;
+    margin: 0;
+    margin-left: 24px
+    padding: 0;
+    background: transparent;
+    color: #ffffff
+    cursor: pointer
+    // display: flex;
+    // align-items: center;
+    &::after
+      content: ""
+      position: absolute
+      left: -11px
+      top: -3px
+      width: 1px
+      height: 30px
+      background-color: rgba(180, 180, 180, 0.38)
+    &:first-child::after
+      display: none
+
+  &__button-img.material-icons
