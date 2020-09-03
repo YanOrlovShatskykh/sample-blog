@@ -32,13 +32,16 @@
 	<title>Sample Blog</title>
 	<meta name="description" content="Sample Blog">
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://use.fontawesome.com/d27473b3d5.js"></script>
 	<!-- <link rel="stylesheet" href="css/animate.css"> -->
 	<!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
 	<!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
   <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
 	<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<!-- <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script> -->
 	<!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js" defer></script> -->
 	<!-- <script src="js/swiper.min.js" defer></script> -->
@@ -48,8 +51,202 @@
 </head>
 
 <body>
-
-
+  <header class="main-header">
+    <div class="main-header__top-menu">
+      <div class="container">
+        <div class="main-header__top-menu-box">
+          <div class="main-header__social">
+            <ul class="main-header__social-list">
+              <li class="main-header__social-list-item">
+                <a href="#" class="main-header__social-link">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a> 
+                <!-- /.main-header__social-link -->
+              </li>
+              <!-- /.main-header__social-list-item -->
+              <li class="main-header__social-list-item">
+                <a href="#" class="main-header__social-link">
+                  <i class="fa fa-twitter" aria-hidden="true">
+                  </i>
+                </a> <!-- /.main-header__social-link -->
+              </li>
+              <!-- /.main-header__social-list-item -->
+              <li class="main-header__social-list-item">
+                <a href="#" class="main-header__social-link">
+                  <i class="fa fa-pinterest-p" aria-hidden="true">
+                  </i>
+                </a> <!-- /.main-header__social-link -->
+              </li>
+              <!-- /.main-header__social-list-item -->
+              <li class="main-header__social-list-item">
+                <a href="#" class="main-header__social-link">
+                  <i class="fa fa-vk" aria-hidden="true">
+                  </i>
+                </a> <!-- /.main-header__social-link -->
+              </li>
+              <!-- /.main-header__social-list-item -->
+              <li class="main-header__social-list-item">
+                <a href="#" class="main-header__social-link">
+                  <i class="fa fa-google-plus" aria-hidden="true">
+                  </i>
+                </a> <!-- /.main-header__social-link -->
+              </li>
+              <!-- /.main-header__social-list-item -->
+              <li class="main-header__social-list-item">
+                <a href="#" class="main-header__social-link">
+                  <i class="fa fa-behance" aria-hidden="true">
+                  </i>
+                </a> <!-- /.main-header__social-link -->
+              </li>
+              <!-- /.main-header__social-list-item -->
+              <li class="main-header__social-list-item">
+                <a href="#" class="main-header__social-link">
+                  <i class="fa fa-dribbble" aria-hidden="true">
+                  </i>
+                </a> <!-- /.main-header__social-link -->
+              </li>
+              <!-- /.main-header__social-list-item -->
+              <li class="main-header__social-list-item">
+                <a href="#" class="main-header__social-link">
+                  <i class="fa fa-instagram" aria-hidden="true">
+                  </i>
+                </a> <!-- /.main-header__social-link -->
+              </li>
+              <!-- /.main-header__social-list-item -->
+            </ul>
+            <!-- /.main-header__social-list -->
+          </div>
+          <!-- /.main-header__social -->
+          <div class="main-header__user">
+            <div class="main-header__user-sign-in">
+              <span class="material-icons">account_circle</span>
+              <button class="button sign-in__button">sign in</button>
+            </div>
+            <!-- /.main-header__user-sign-in -->
+            <div class="main-header__user-lang">
+              <span class="material-icons">language</span>
+              <button class="button lang__button">eng</button>
+              <button class="js-lang-selection">
+                <span class="material-icons">keyboard_arrow_down</span>
+              </button> 
+              <!-- /.js-lang-selection -->
+            </div>
+            <!-- /.main-header__user-lang -->
+          </div>
+          <!-- /.main-header__user -->
+        </div>
+        <!-- /.main-header__top-menu-box -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.main-header__top-menu -->
+    <section class="main-header__main-menu container">
+      <div class="main-menu__logo">
+        <span class="main-menu__logo-text">logo</span> 
+        <!-- /.main-menu__logo-text -->
+      </div>
+      <!-- /.main-menu__logo -->
+      <nav class="main-menu__navigation">
+        <ul class="main-menu__list">
+          <li class="main-menu__list-item">
+            <button class="main-menu__button">
+              <span class="main-menu__button-text"></span> 
+              <!-- /.main-menu__button-text -->
+              <span class="main-menu__button-arrow"></span> 
+              <!-- /.main-menu__button-arrow -->
+            </button> 
+            <!-- /.main-menu__button -->
+          </li>
+          <!-- /.main-menu__list-item -->
+          <li class="main-menu__list-item">
+            <button class="main-menu__button">
+              <span class="main-menu__button-text"></span> 
+              <!-- /.main-menu__button-text -->
+              <span class="main-menu__button-arrow"></span> 
+              <!-- /.main-menu__button-arrow -->
+            </button> 
+            <!-- /.main-menu__button -->
+          </li>
+          <!-- /.main-menu__list-item -->
+          <li class="main-menu__list-item">
+            <button class="main-menu__button">
+              <span class="main-menu__button-text"></span> 
+              <!-- /.main-menu__button-text -->
+              <span class="main-menu__button-arrow"></span> 
+              <!-- /.main-menu__button-arrow -->
+            </button> 
+            <!-- /.main-menu__button -->
+          </li>
+          <!-- /.main-menu__list-item -->
+          <li class="main-menu__list-item">
+            <button class="main-menu__button">
+              <span class="main-menu__button-text"></span> 
+              <!-- /.main-menu__button-text -->
+              <span class="main-menu__button-arrow"></span> 
+              <!-- /.main-menu__button-arrow -->
+            </button> 
+            <!-- /.main-menu__button -->
+          </li>
+          <!-- /.main-menu__list-item -->
+          <li class="main-menu__list-item">
+            <button class="main-menu__button">
+              <span class="main-menu__button-text"></span> 
+              <!-- /.main-menu__button-text -->
+              <span class="main-menu__button-arrow"></span> 
+              <!-- /.main-menu__button-arrow -->
+            </button> 
+            <!-- /.main-menu__button -->
+          </li>
+          <!-- /.main-menu__list-item -->
+          <li class="main-menu__list-item">
+            <button class="main-menu__button">
+              <span class="main-menu__button-text"></span> 
+              <!-- /.main-menu__button-text -->
+              <span class="main-menu__button-arrow"></span> 
+              <!-- /.main-menu__button-arrow -->
+            </button> 
+            <!-- /.main-menu__button -->
+          </li>
+          <!-- /.main-menu__list-item -->
+          <li class="main-menu__list-item">
+            <button class="main-menu__button">
+              <span class="main-menu__button-text"></span> 
+              <!-- /.main-menu__button-text -->
+              <span class="main-menu__button-arrow"></span> 
+              <!-- /.main-menu__button-arrow -->
+            </button> 
+            <!-- /.main-menu__button -->
+          </li>
+          <!-- /.main-menu__list-item -->
+        </ul>
+        <!-- /.main-menu__list -->
+      </nav>
+      <!-- /.main-menu__navigation -->
+      <div class="main-menu__actions">
+        <button class="main-menu__button-action">
+          <span class="main-menu__button-img"></span> 
+          <!-- /.main-menu__button-img -->
+        </button>
+        <!-- /.main-menu__button-action -->
+        <button class="main-menu__button-action">
+          <span class="main-menu__button-img"></span> 
+          <!-- /.main-menu__button-img -->
+        </button>
+        <!-- /.main-menu__button-action -->
+        <button class="main-menu__button-action">
+          <span class="main-menu__button-img"></span> 
+          <!-- /.main-menu__button-img -->
+        </button>
+        <!-- /.main-menu__button-action -->
+      </div>
+      <!-- /.main-menu__actions -->
+    </section>
+    <!-- /.main-header__main-menu container -->
+  </header>
+  <!-- /.main-header -->
+<!-- 
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif; -->
 </body>
 
 </html>
