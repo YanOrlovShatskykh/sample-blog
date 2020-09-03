@@ -348,6 +348,7 @@ img {
 
 .main-header__main-title {
   padding-top: 210px;
+  margin-bottom: 79px;
 }
 
 .main-title__subtitle {
@@ -387,6 +388,84 @@ img {
   text-decoration: none;
   -webkit-box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
           box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+  cursor: pointer;
+}
+
+.author__article-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.author__article-img {
+  margin-bottom: 12px;
+  width: 51px;
+  height: auto;
+}
+
+.author__article-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.author__article-date {
+  margin-bottom: 21px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 27px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.author__article-date-left-column {
+  margin-right: 33px;
+}
+
+.author__comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 27px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.author__comments-left-column, .author__comments-right-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author__comments-left-column {
+  margin-right: 10px;
+}
+
+.author__comments-icon {
+  padding-right: 11px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 1200px) {
@@ -493,6 +572,9 @@ img {
     margin: 0;
   }
   .main-header__main-title {
+    display: none;
+  }
+  .main-header__author {
     display: none;
   }
 }
