@@ -17,6 +17,7 @@
     color: rgba(255, 255, 255, 0.7)
     font-variant: small-caps
   &__title
+    position: relative
     margin: 0
     margin-bottom: 29px
     padding-left: 12px
@@ -28,6 +29,23 @@
     color: #ffffff
     text-transform: uppercase
     letter-spacing: 2px
+    &::before,
+    &::after
+      top: 29px
+      content: ""
+      position: absolute
+      width: 13px
+      height: 42px
+      background-image: url("../img/main-header/arrow.svg")
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      cursor: pointer
+    &::before
+      left: -50px
+    &::after
+      right: -50px
+      transform: rotate(180deg)
   &__button
     padding: 5px 28px
     font-family: 'Montserrat', sans-serif

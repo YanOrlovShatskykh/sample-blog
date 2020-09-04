@@ -1,0 +1,248 @@
+.main
+  &__article-block
+    width: 100%
+    display: flex
+    // background: linear-gradient(to right,  #000000 0%,#000000 50%,#ffffff 50%)
+  &__articles
+    display: flex
+    justify-content: flex-start
+    margin-top: 28px
+  &__article-left-column
+    margin-right: 47px
+    background-color: #f5f5f5
+    flex-basis: 70%
+    // width: 820px
+    // height: 630px                                 //delete
+    &-grid-container
+      // background: rgb(0, 150, 208)
+      display: grid
+      height: auto
+      grid-template-columns: auto 
+      grid-template-rows: auto
+      // grid-column-gap: 20px
+      grid-row-gap: 20px
+      grid-column-gap: 20px
+      justify-content: flex-end
+
+  &__article-right-column
+    background-color: #ffffff
+    flex-basis: 30%
+
+    // width: 320px
+    // height: 2300px                                    //delete
+    
+.article
+  // margin-left: auto
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12)
+  border-radius: 5px
+  background-color: #ffffff
+  overflow: hidden
+  &-1
+    position: relative
+    grid-column-start: 1
+    grid-column-end: 7
+  &-img
+    position: relative
+    &-play
+      position: absolute
+      top: 50%
+      left: 50%
+      font-size: 60px
+      color: #ffffff
+      transform: translate(-50%, -50%)
+      cursor: pointer
+  &-info
+    width: 100%
+    position: absolute
+    bottom: 11px
+    left: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-social
+    display: flex
+    align-items: center
+    // margin-right: 20px
+    justify-content: space-between
+    &-left,
+    &-right
+      display: flex
+      align-items: center
+      margin-right: 20px
+      font-family: 'Montserrat', sans-serif
+      font-size: 12px
+      line-height: 27px
+      color: #ffffff
+  &-value
+    margin-left: 20px
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    line-height: 27px
+    color: #ffffff
+    font-variant: small-caps
+  &-icon
+    font-size: 16px
+    color: #ffffff
+    padding-right: 5px
+  &-text
+    padding: 13px 20px
+    padding-bottom: 15px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+    cursor: pointer
+  &__text
+    &-title
+      font-family: 'Montserrat', sans-serif
+      color: rgba(0, 0, 0, 0.87)
+      margin: 0
+      font-size: 18px
+      line-height: 29px
+      font-weight: 700
+    &-description
+      margin: 0
+      font-size: 16px
+      line-height: 26px
+      letter-spacing: 0.6px
+  &-author
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+    padding-right: 12px
+  &__author
+    &-left-column
+      display: flex
+      justify-content: space-between
+      align-items: center
+      cursor: pointer
+      &-desc
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-direction: column
+    &-img
+      margin-right: 11px
+    &-name
+      margin-bottom: -4px
+      font-family: 'Montserrat', sans-serif
+      font-size: 14px
+      line-height: 27px
+      font-weight: 600
+      color: rgba(0, 0, 0, 0.87)
+    &-date
+      font-family: 'Montserrat', sans-serif
+      font-size: 12px
+      line-height: 27px
+      font-weight: 600
+
+      color: rgba(0, 0, 0, 0.54)
+      &-right-column
+        margin-left: 9px
+    &-right-column
+      &-icon
+        cursor: pointer
+  &-2
+    grid-column-start: 1
+    grid-column-end: 7
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &-img-play
+      font-size: 47px
+    &-text
+      padding-top: 8px
+    &__text-title
+      margin-bottom: 5px
+      max-width: 520px
+      font-size: 16px
+      line-height: 26px
+    &__text-description
+      max-width: 520px
+      font-size: 14px
+      line-height: 21px
+    &-author
+      padding: 10px 20px
+      padding-bottom: 9px
+      padding-right: 12px
+
+
+
+  &-3
+    grid-column-start: 1
+    grid-column-end: 7
+  &-4
+    grid-column-start: 1
+    grid-column-end: 7
+  &-5
+    &-info
+      bottom: 6px
+    grid-column-start: 1
+    grid-column-end: 3
+    &-img-play
+      font-size: 49px
+    &-text
+      width: 230px
+      padding-right: 0
+    &__text
+      &-title
+        margin-bottom: 6px
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        line-height: 24px
+        font-weight: 700
+        color: rgba(0, 0, 0, 0.87)
+      &-description
+        font-size: 14px
+        line-height: 21px
+        color: rgba(0, 0, 0, 0.87)
+  &-6
+    grid-column-start: 3
+    grid-column-end: 5
+    &-text
+      width: 230px
+      padding-right: 0
+    &__text
+      &-title
+        margin-bottom: 6px
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        line-height: 24px
+        font-weight: 700
+        color: rgba(0, 0, 0, 0.87)
+      &-description
+        font-size: 14px
+        line-height: 21px
+        color: rgba(0, 0, 0, 0.87)
+  &-7
+    grid-column-start: 5
+    grid-column-end: 7
+    &-text
+      width: 230px
+      padding-right: 0
+    &__text
+      &-title
+        margin-bottom: 6px
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        line-height: 24px
+        font-weight: 700
+        color: rgba(0, 0, 0, 0.87)
+      &-description
+        font-size: 14px
+        line-height: 21px
+        color: rgba(0, 0, 0, 0.87)
+  &-8
+    grid-column-start: 4
+    grid-column-end: 1
+  &-9
+    grid-column-start: 4
+    grid-column-end: 7
+  
+
+// #grid-container > div:nth-of-type(2) {grid-column-start: 1 grid-column-end: 7 }
+// #grid-container > div:nth-of-type(3) {grid-column-start: 1 grid-column-end: 7 }
+// #grid-container > div:nth-of-type(4) {grid-column-start: 1 grid-column-end: 7 }
+// #grid-container > div:nth-of-type(5) {grid-column-start: 1 grid-column-end: 3 }
+// #grid-container > div:nth-of-type(6) {grid-column-start: 3 grid-column-end: 5 }
+// #grid-container > div:nth-of-type(7) {grid-column-start: 5 grid-column-end: 7 }
+// #grid-container > div:nth-of-type(8) {align-self: stretch grid-column-end: 4 grid-column-start: 1 }
+// #grid-container > div:nth-of-type(9) {align-self: stretch justify-self: stretch grid-column-start: 4 grid-column-end: 7 }
