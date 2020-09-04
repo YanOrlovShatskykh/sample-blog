@@ -87,7 +87,6 @@
   &-text
     padding: 13px 20px
     padding-bottom: 15px
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12)
     cursor: pointer
   &__text
     &-title
@@ -108,6 +107,7 @@
     align-items: center
     padding: 20px
     padding-right: 12px
+    border-top: 1px solid rgba(0, 0, 0, 0.12)
   &__author
     &-left-column
       display: flex
@@ -182,6 +182,9 @@
     &-text
       width: 230px
       padding-right: 0
+      padding-bottom: 25px
+    &-author
+      padding-top: 16px
     &__text
       &-title
         margin-bottom: 6px
@@ -200,6 +203,9 @@
     &-text
       width: 230px
       padding-right: 0
+      padding-bottom: 25px
+    &-author
+      padding-top: 16px
     &__text
       &-title
         margin-bottom: 6px
@@ -218,6 +224,9 @@
     &-text
       width: 230px
       padding-right: 0
+      padding-bottom: 25px
+    &-author
+      padding-top: 16px
     &__text
       &-title
         margin-bottom: 6px
@@ -230,12 +239,42 @@
         font-size: 14px
         line-height: 21px
         color: rgba(0, 0, 0, 0.87)
-  &-8
+  &-8  
     grid-column-start: 4
     grid-column-end: 1
+    &__author-left-column
+      padding-top: 7px
+    &-author
+      padding-top: 7px
+      padding-bottom: 15px
+    &-text
+      width: 360px
+      padding-right: 0
+      padding-bottom: 15px
+      padding-top: 10px
+    &__text
+      &-title
+        width: 360px
+        font-family: 'Montserrat', sans-serif
+        font-size: 18px
+        line-height: 29px
+        font-weight: 700
+        color: rgba(0, 0, 0, 0.87)
+      &-description
+        width: 360px
+        font-size: 16px
+        line-height: 26px
+        color: rgba(0, 0, 0, 0.87)
+    &-info
+      bottom: 15px
   &-9
     grid-column-start: 4
     grid-column-end: 7
+    &__text
+      &-title
+        color: #3f51b5
+.article__5-author-right-column-icon
+  padding-top: 20px
   
 
 // #grid-container > div:nth-of-type(2) {grid-column-start: 1 grid-column-end: 7 }

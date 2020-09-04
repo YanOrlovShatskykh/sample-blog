@@ -750,7 +750,6 @@ img {
 .article-text {
   padding: 13px 20px;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
@@ -782,6 +781,7 @@ img {
           align-items: center;
   padding: 20px;
   padding-right: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .article__author-left-column {
@@ -913,6 +913,11 @@ img {
 .article-5-text {
   width: 230px;
   padding-right: 0;
+  padding-bottom: 25px;
+}
+
+.article-5-author {
+  padding-top: 16px;
 }
 
 .article-5__text-title {
@@ -939,6 +944,11 @@ img {
 .article-6-text {
   width: 230px;
   padding-right: 0;
+  padding-bottom: 25px;
+}
+
+.article-6-author {
+  padding-top: 16px;
 }
 
 .article-6__text-title {
@@ -965,6 +975,11 @@ img {
 .article-7-text {
   width: 230px;
   padding-right: 0;
+  padding-bottom: 25px;
+}
+
+.article-7-author {
+  padding-top: 16px;
 }
 
 .article-7__text-title {
@@ -988,10 +1003,54 @@ img {
   grid-column-end: 1;
 }
 
+.article-8__author-left-column {
+  padding-top: 7px;
+}
+
+.article-8-author {
+  padding-top: 7px;
+  padding-bottom: 15px;
+}
+
+.article-8-text {
+  width: 360px;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.article-8__text-title {
+  width: 360px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.article-8__text-description {
+  width: 360px;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.article-8-info {
+  bottom: 15px;
+}
+
 .article-9 {
   -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: 7;
+}
+
+.article-9__text-title {
+  color: #3f51b5;
+}
+
+.article__5-author-right-column-icon {
+  padding-top: 20px;
 }
 
 @media (max-width: 1200px) {
