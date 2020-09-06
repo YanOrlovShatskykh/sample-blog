@@ -1,0 +1,257 @@
+.footer
+  &-gallery
+    &-list
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 0
+      padding: 0
+      list-style: none
+    &-item
+  &-subscribe
+    background-image: url("../img/footer/bg.jpg")
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    &-box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      padding: 77px 0
+    &-title
+      margin: 0
+      font-family: 'Montserrat', sans-serif
+      font-size: 42px
+      line-height: 36px
+      font-weight: 900
+      color: #ffffff
+      letter-spacing: 1px
+    &-input
+      margin-top: 4px
+      margin-left: 10px
+      padding: 3px 18px
+      padding-right: 70px
+      border: 1px solid #747779
+      border-radius: 22px
+      background-color: rgba(48, 48, 48, 0.38)
+      &[placeholder]
+        font-size: 16px
+        line-height: 36px
+        color: rgba(255, 255, 255, 0.54)
+        letter-spacing: 1px
+    &-button
+      border: none
+      padding: 5px 34px
+  &-main
+    padding: 43px 0
+    padding-bottom: 70px
+    background-color: #212121
+    &-box
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      flex-wrap: wrap
+    &-pages
+      width: 270px
+      
+      &-title
+        margin: 0
+        margin-bottom: 21px
+        font-family: 'Montserrat', sans-serif
+        font-size: 18px
+        line-height: 29px
+        font-weight: 700
+        color: #ffffff
+        text-transform: uppercase
+      &-list
+        margin: 0
+        padding: 0
+        list-style: none
+        &_active
+          margin: 0;
+          margin-bottom: 5px
+          margin-top: -6px
+          padding: 0;
+          list-style: none;
+          border: 1px solid rgba(255, 255, 255, 0.38)
+          border-radius: 4px;
+          border-top-left-radius: 0
+          border-top-right-radius: 0
+      &-item
+        &_active
+          padding: 6px 14px
+          font-size: 14px
+          line-height: 27px
+          color: rgba(255, 255, 255, 0.5)
+          cursor: pointer
+          &:last-child
+            margin-bottom: 8px
+            
+
+      &-button
+        position: relative
+        width: 100%
+        margin-bottom: 5px
+        padding: 2px 16px
+        background-color: transparent
+        border: 1px solid rgba(255, 255, 255, 0.38)
+        cursor: pointer
+        font-size: 14px
+        line-height: 39px
+        font-weight: 700
+        color: rgba(255, 255, 255, 0.7)
+        border-radius: 4px
+        text-align: left
+        text-transform: uppercase
+        &::before,
+        &::after
+          content: ""
+          position: absolute
+          top: 21px
+          right: 13px
+          width: 14px
+          height: 2px
+          background-color: rgba(255, 255, 255, 0.5)
+        &::after
+          transform: rotate(90deg)
+        &_active
+          border-bottom-left-radius: 0
+          border-bottom-right-radius: 0
+          &::after
+            display: none
+    &-twitter
+      width: 270px
+      &-title
+        margin-bottom: 17px
+      &-list
+        margin: 0
+        margin-bottom: 13px
+        padding: 0
+        list-style: none
+        &-text
+          display: flex
+          justify-content: flex-start
+          align-items: flex-start
+          &-icon
+            margin-left: 10px
+            margin-right: 15px
+            font-size: 24px
+            color: #55acee
+          &-desc
+            margin: 0
+            font-size: 14px
+            line-height: 21px
+            color: rgba(255, 255, 255, 0.7)
+        &-info
+          display: flex
+          justify-content: space-between
+          align-items: center
+          margin-top: -3px
+          &-t
+            padding-bottom: 2px
+            font-size: 12px
+            line-height: 36px
+            color: rgba(255, 255, 255, 0.5)
+          &-a
+            font-size: 12px
+            line-height: 36px
+            color: rgba(255, 255, 255, 0.5)
+      &-item:not(:last-child)
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12)
+        margin-bottom: 11px
+    &-social
+      &-title
+        margin-bottom: 11px
+    &-flickr
+      width: 270px
+      &-title
+      &-list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin: 0
+        padding: 0
+        list-style: none
+      &-item
+        margin-bottom: 9px
+    &-subscribe
+      width: 270px
+      &-title
+        margin-bottom: 18px
+      &-form
+        border: none
+        &-input
+          margin-bottom: 11px
+          border: 1px solid rgba(255, 255, 255, 0.38)
+          background-color: transparent
+          &[placeholder]
+            color: #ffe
+        &-textarea
+          &[placeholder]
+            color: #ffe
+        &-button
+          background-color: #303030
+          font-size: 18px
+          line-height: 30px
+          letter-spacing: 2px
+        &-textarea
+          margin-bottom: 1px
+          border: 1px solid rgba(255, 255, 255, 0.38)
+          background-color: transparent
+  &-menu
+    padding: 28px 0
+    background-color: #303030
+    &-box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+    &-nav
+      &-list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+        margin: 0
+        padding: 0
+        list-style: none
+      &-item
+        padding-right: 42px
+        font-family: 'Montserrat', sans-serif
+        font-size: 12px
+        font-weight: 600
+        color: #ffffff
+        text-transform: uppercase
+        cursor: pointer
+      &-search
+        margin-left: 111px;
+        margin-top: -4px;
+        padding: 3px 19px;
+        padding-right: 21px;
+        border: 1px solid rgba(255, 255, 255, 0.38)
+
+        background-color: transparent
+        border-radius: 40px;
+        &[placeholder]
+          line-height: 26px
+          color: rgba(255, 255, 255, 0.5)
+        &-button
+          background-color: transparent
+          box-shadow: none
+          left: 289px
+          &-icon
+            font-size: 18px
+            color: rgba(255, 255, 255, 0.5)
+        &-box
+          position: relative
+          margin-bottom: 0
+      &-lang
+        &::before
+          display: none
+        &-icon
+          font-size: 18px
+          color: rgba(255, 255, 255, 0.5)
+          
+
+

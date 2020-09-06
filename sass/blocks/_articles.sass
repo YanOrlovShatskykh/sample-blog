@@ -2,19 +2,16 @@
   &__article-block
     width: 100%
     display: flex
-    // background: linear-gradient(to right,  #000000 0%,#000000 50%,#ffffff 50%)
   &__articles
     display: flex
     justify-content: flex-start
     margin-top: 28px
   &__article-left-column
     position: relative
+    flex-basis: 70%
     margin-right: 47px
     padding-bottom: 128px
     background-color: #f5f5f5
-    flex-basis: 70%
-    // width: 820px
-    // height: 630px                           //delete
     &-more
       position: absolute
       bottom: 42px
@@ -34,36 +31,29 @@
       position: relative
       width: 42px
       height: 42px
-      border: none
       background-color: #ffffff
-      border-radius: 50%
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12)
       cursor: pointer
+      border: none
+      border-radius: 50%
       &-arrow
         position: absolute
         top: 50%
         left: 50%
         color: #303f9f
         transform: translate(-50%, -50%)
-
     &-grid-container
-      // background: rgb(0, 150, 208)
       display: grid
       height: auto
       grid-template-columns: auto 
       grid-template-rows: auto
-      // grid-column-gap: 20px
       grid-row-gap: 20px
       grid-column-gap: 20px
       justify-content: flex-end
-
   &__article-right-column
-    background-color: #ffffff
     flex-basis: 30%
     padding: 24px 35px
-
-    // width: 320px
-    // height: 2300px  
+    background-color: #ffffff
     &-search
       &-box
         position: relative
@@ -76,8 +66,8 @@
         left: 229px
         width: 35px
         height: 35px
-        border: none
         background-color: #ff4081
+        border: none
         border-radius: 50%
         cursor: pointer
         box-shadow: 0 2px 13px rgba(0,0,0,0.12)
@@ -88,12 +78,12 @@
           color: #ffffff
           transform: translate(-50%, -50%)
     &-input
-      border: none;
-      background-color: #f5f5f5
       padding: 9px 20px
       padding-right: 68px
+      border: none;
+      background-color: #f5f5f5
       border-radius: 40px
-      &[value]
+      &[placeholder]
         font-size: 16px
         line-height: 26px
         color: rgba(0, 0, 0, 0.38)
@@ -104,7 +94,6 @@
         font-family: 'Montserrat', sans-serif
         font-size: 18px
         font-weight: 700
-        // line-height: 27px
         color: #3f51b5
         text-transform: uppercase
       &-list
@@ -130,7 +119,6 @@
         font-family: 'Montserrat', sans-serif
         font-size: 18px
         font-weight: 700
-        // line-height: 27px
         color: #3f51b5
         text-transform: uppercase
       &-form
@@ -156,7 +144,7 @@
           padding: 8px 16px
           background-color: #ffffff
           border-radius: 5px
-          &[value]
+          &[placeholder]
           font-size: 16px
           line-height: 26px
           color: rgba(0, 0, 0, 0.38)
@@ -232,7 +220,6 @@
         font-family: 'Montserrat', sans-serif
         font-size: 18px
         font-weight: 700
-        // line-height: 27px
         color: #3f51b5
         text-transform: uppercase
         border-bottom: 1px solid rgba(63, 81, 181, 0.38)
@@ -253,6 +240,7 @@
         color: #3f51b5
         font-variant: small-caps
         background-color: #ffffff
+        cursor: pointer
       &-left-btn
         border-top-left-radius: 5px
         border-bottom-left-radius: 5px
@@ -275,6 +263,7 @@
         margin-bottom: 15px;
         padding-bottom: 15px;
         border-bottom: 1px solid #dee5e9
+        cursor: pointer
         &:last-child
           border: none
         &-description
@@ -305,7 +294,6 @@
         font-family: 'Montserrat', sans-serif
         font-size: 18px
         font-weight: 700
-        // line-height: 27px
         color: #3f51b5
         text-transform: uppercase
         border-bottom: 1px solid rgba(63, 81, 181, 0.38)
@@ -326,14 +314,8 @@
           font-size: 14px
           line-height: 27px
           color: rgba(0, 0, 0, 0.87)
-          text-decoration: none
-
-
-
-
-          
+          text-decoration: none          
 .article
-  // margin-left: auto
   box-shadow: 0 1px 1px rgba(0,0,0,0.12)
   border-radius: 5px
   background-color: #ffffff
@@ -363,7 +345,6 @@
   &-social
     display: flex
     align-items: center
-    // margin-right: 20px
     justify-content: space-between
     &-left,
     &-right
@@ -434,7 +415,6 @@
       font-size: 12px
       line-height: 27px
       font-weight: 600
-
       color: rgba(0, 0, 0, 0.54)
       &-right-column
         margin-left: 9px
@@ -478,7 +458,7 @@
     &-img-play
       font-size: 49px
     &-text
-      width: 230px
+      max-width: 230px
       padding-right: 0
       padding-bottom: 25px
     &-author
@@ -499,7 +479,7 @@
     grid-column-start: 3
     grid-column-end: 5
     &-text
-      width: 230px
+      max-width: 230px
       padding-right: 0
       padding-bottom: 25px
     &-author
@@ -520,7 +500,7 @@
     grid-column-start: 5
     grid-column-end: 7
     &-text
-      width: 230px
+      max-width: 230px
       padding-right: 0
       padding-bottom: 25px
     &-author
@@ -546,23 +526,27 @@
       padding-top: 7px
       padding-bottom: 15px
     &-text
-      width: 360px
+      max-width: 360px
       padding-right: 0
       padding-bottom: 15px
       padding-top: 10px
     &__text
       &-title
-        width: 360px
+        max-width: 360px
         font-family: 'Montserrat', sans-serif
         font-size: 18px
         line-height: 29px
         font-weight: 700
         color: rgba(0, 0, 0, 0.87)
       &-description
-        width: 360px
+        max-width: 360px
         font-size: 16px
         line-height: 26px
         color: rgba(0, 0, 0, 0.87)
+        display: -webkit-box
+        -webkit-line-clamp: 4
+        -webkit-box-orient: vertical
+        overflow-y: hidden
     &-info
       bottom: 15px
   &-9
@@ -573,13 +557,3 @@
         color: #3f51b5
 .article__5-author-right-column-icon
   padding-top: 20px
-  
-
-// #grid-container > div:nth-of-type(2) {grid-column-start: 1 grid-column-end: 7 }
-// #grid-container > div:nth-of-type(3) {grid-column-start: 1 grid-column-end: 7 }
-// #grid-container > div:nth-of-type(4) {grid-column-start: 1 grid-column-end: 7 }
-// #grid-container > div:nth-of-type(5) {grid-column-start: 1 grid-column-end: 3 }
-// #grid-container > div:nth-of-type(6) {grid-column-start: 3 grid-column-end: 5 }
-// #grid-container > div:nth-of-type(7) {grid-column-start: 5 grid-column-end: 7 }
-// #grid-container > div:nth-of-type(8) {align-self: stretch grid-column-end: 4 grid-column-start: 1 }
-// #grid-container > div:nth-of-type(9) {align-self: stretch justify-self: stretch grid-column-start: 4 grid-column-end: 7 }

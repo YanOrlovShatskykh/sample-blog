@@ -18,8 +18,22 @@
   .main-header
     &__main-title
       padding-top: 100px
+  .main__article-left-column
+    margin-left: 5%
+    flex-basis: 50%
+  .main__article-right-column
+    flex-basis: 50%
 
-// @media(max-width: 992px)
+@media(max-width: 992px)
+  .main__article-block
+    flex-direction: column
+  .main__article-right-column
+    margin-left: 30%
+  .crop-height 
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+    overflow-y: hidden
 
 @media(max-width: 768px)
   .main-menu
@@ -45,6 +59,8 @@
   .main-header
     &__main-title
       padding-top: 50px
+  .article__text-description
+    display: none
         
 
 @media(max-width: 576px)
@@ -95,3 +111,63 @@
     &__title,
     &__list
       display: none
+  .main__article-right-column
+    margin-left: 0
+    background-color: #212121
+  .main__article-right-column-search-box,
+  .main__article-right-column-subscribe,
+  .main__article-right-column-social,
+  .main__article-right-column-widget
+    display: none
+  .main__article-right-column-categories-title,
+  .main__article-right-column-categories-item
+    color: #ffffff
+  .main__article-right-column-categories-list,
+  .main__article-right-column-tags
+    max-width: 100%
+  .article__text-description
+    display: none
+  .main__article-left-column
+    margin-right: 5%
+  .article-2
+    &:nth-child(3)
+      flex-direction: column
+      grid-column-start: 1
+      grid-column-end: 4
+    &:nth-child(4)
+      flex-direction: column
+      grid-column-start: 4
+      grid-column-end: 7
+      height: 150px
+  .article-5
+    grid-column-start: 1;
+    grid-column-end: 4;  
+  .article-6
+    grid-column-start: 4;
+    grid-column-end: 7;
+    position: relative;
+    right: 0;
+    top: -80px;
+  .article-7
+    grid-column-start: 4;
+    grid-column-end: 7;
+    position: relative;
+    right: 0;
+    top: -80px;
+  .article-8
+    height: 175px;
+    position: relative;
+    top: -260px;
+  .article-9
+    -ms-grid-column: 4;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    position: absolute
+    width: 85%
+    bottom: 85px
+    left: 8%
+  .article-9 img
+    width: 100%
+  .article-author
+    display: none
+  
